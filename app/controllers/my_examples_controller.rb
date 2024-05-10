@@ -1,6 +1,7 @@
 class MyExamplesController < ApplicationController
   def seefortune
     n = rand(1..4)
+    #letter = rand(65..90).chr
     if n == 1
       render json: {message: "Read daily"}
     elsif n ==2
@@ -18,4 +19,6 @@ class MyExamplesController < ApplicationController
     end
     render json: {message: "The winning numbers are #{num}"}
   end
+  
+
 end
